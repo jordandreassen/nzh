@@ -1,17 +1,21 @@
 {
 	"manifest_version": 2,
 	"name": "NZHerald Premium Viewer",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"content_scripts": [
 		{
-			"matches": ["https://*.nzherald.co.nz/*"],
-			"js": ["jquery.min.js", "contentScript.js"]
+			"matches": ["*://*.nzherald.co.nz/*"],
+			"js": ["jquery-3.5.1.min.js", "contentScript.js"]
 		}
-	],
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
 	"permissions": [
 		"webRequest",
-		"webRequestBlocking",
-		"*://www.nzherald.co.nz/arc/subs/p.js"
+        "webRequestBlocking",
+        "https://www.nzherald.co.nz/pb/gr/c/default/r0nARN1TvOjoZr/headjs/75b5749904.js?v=169"
 	],
 	"description": "Allows you to view nzherald premium articles for free"
 }
