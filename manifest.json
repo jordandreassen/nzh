@@ -15,7 +15,7 @@
 	"permissions": [
 		"webRequest",
         "webRequestBlocking",
-        "https://www.nzherald.co.nz/pb/gr/c/default/r0nARN1TvOjoZr/headjs/75b5749904.js?v=169"
+        "https://www.nzherald.co.nz/*75b5749904.js?v=169"
 	],
 	"description": "Allows you to view nzherald premium articles for free"
 }
