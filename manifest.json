@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "NZHerald Premium Viewer",
-	"version": "0.0.4",
+	"version": "0.0.6",
 	"content_scripts": [
 		{
 			"matches": ["*://*.nzherald.co.nz/*"],
@@ -15,7 +15,7 @@
 	"permissions": [
 		"webRequest",
         "webRequestBlocking",
-        "https://www.nzherald.co.nz/*75b5749904.js?v=169"
+        "https://www.nzherald.co.nz/*75b5749904.js?v=*"
 	],
 	"description": "Allows you to view nzherald premium articles for free"
 }
